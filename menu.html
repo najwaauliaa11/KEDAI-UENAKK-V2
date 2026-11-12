@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigasi - Kedai Uenaak</title>
+    <link rel="stylesheet" href="css_uts.css">
+    <style>
+        body.halaman-menu {
+            margin: 0;
+            padding: 1.5rem 1.15rem;
+            background-color: var(--bg-surface);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-sizing: border-box;
+            border-right: 1px solid var(--border);
+            font-family: var(--font-sans);
+        }
+
+        .sidebar-brand {
+            padding-bottom: 1.25rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .brand-name {
+            font-family: var(--font-serif);
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--primary);
+            line-height: 1.2;
+            margin-bottom: 0.25rem;
+        }
+
+        .brand-sub {
+            font-size: 0.72rem;
+            font-weight: 600;
+            color: var(--accent);
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .nav-label {
+            font-size: 0.72rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-tertiary);
+            margin-bottom: 0.75rem;
+            padding-left: 0.35rem;
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+        }
+
+        .sidebar-links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.35rem;
+        }
+
+        p.menu {
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu a {
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+            padding: 0.65rem 0.85rem;
+            font-size: 0.86rem;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            color: var(--text-primary);
+            background-color: var(--bg-surface-alt);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .menu a i {
+            width: 24px;
+            height: 24px;
+            font-size: 0.82rem;
+            color: var(--primary);
+            background: rgba(27, 59, 43, 0.08);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            transition: var(--transition);
+        }
+
+        .menu a:hover {
+            color: var(--primary);
+            background-color: var(--primary-tint);
+            border-color: var(--primary-border);
+            transform: translateX(3px);
+        }
+
+        .menu a:hover i {
+            background-color: var(--primary);
+            color: #FFFFFF;
+        }
+
+        .menu a.active {
+            color: #FFFFFF !important;
+            background-color: var(--primary);
+            border-color: var(--primary);
+            box-shadow: 0 4px 12px rgba(27, 59, 43, 0.25);
+        }
+
+        .menu a.active i {
+            background-color: rgba(255, 255, 255, 0.25);
+            color: #FFFFFF;
+        }
+
+        .sidebar-footer-box {
+            padding-top: 1.25rem;
+            border-top: 1px solid var(--border);
+            font-size: 0.8rem;
+            color: var(--text-tertiary);
+        }
+
+        .sidebar-info-row {
+            margin-bottom: 0.65rem;
+            line-height: 1.45;
+        }
+
+        .sidebar-info-row strong {
+            color: var(--text-primary);
+            display: block;
+            font-size: 0.84rem;
+        }
+
+        .sidebar-est {
+            font-family: var(--font-serif);
+            font-style: italic;
+            color: var(--accent);
+            font-size: 0.78rem;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+<body class="halaman-menu">
+    <div>
+        <div class="sidebar-brand">
+            <div class="brand-name">KEDAI UENAAK</div>
+            <div class="brand-sub">Masakan Rumah • Pontianak</div>
+        </div>
+
+        <div class="nav-label"><i class="fa-solid fa-compass" style="font-size: 0.75rem;"></i> Navigasi Menu</div>
+
+        <div class="sidebar-links">
+            <p class="menu">
+                <a href="isi.html" target="isi" class="active" onclick="setActive(this)">
+                    <i class="fa-solid fa-house"></i>
+                    <span>BERANDA</span>
+                </a>
+            </p>
+
+            <p class="menu">
+                <a href="makanan.html" target="isi" onclick="setActive(this)">
+                    <i class="fa-solid fa-bowl-food"></i>
+                    <span>MAKANAN</span>
+                </a>
+            </p>
+
+            <p class="menu">
+                <a href="minuman.html" target="isi" onclick="setActive(this)">
+                    <i class="fa-solid fa-mug-hot"></i>
+                    <span>MINUMAN</span>
+                </a>
+            </p>
+
+            <p class="menu">
+                <a href="pesanan.html" target="isi" onclick="setActive(this)">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>PESANAN</span>
+                </a>
+            </p>
+
+            <p class="menu">
+                <a href="lokasi.html" target="isi" onclick="setActive(this)">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>LOKASI</span>
+                </a>
+            </p>
+
+            <p class="menu">
+                <a href="kontak.html" target="isi" onclick="setActive(this)">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>KONTAK</span>
+                </a>
+            </p>
+        </div>
+    </div>
+
+    <div class="sidebar-footer-box">
+        <div style="background: var(--primary-tint); border: 1px solid var(--primary-border); border-radius: 6px; padding: 0.65rem 0.75rem; margin-bottom: 0.85rem;">
+            <div style="display: flex; align-items: center; gap: 0.35rem; font-size: 0.72rem; font-weight: 800; color: #0E7039; text-transform: uppercase;">
+                <span style="width: 7px; height: 7px; background: #10B981; border-radius: 50%; display: inline-block;"></span>
+                BUKA HARI INI
+            </div>
+            <div style="font-size: 0.82rem; font-weight: 700; color: var(--primary); margin-top: 0.2rem;">08.00 – 14.00 WIB</div>
+        </div>
+
+        <div class="sidebar-info-row">
+            <span>Area Untan Pontianak:</span>
+            <strong>Masjid Al-Muhtadin</strong>
+        </div>
+
+        <div class="sidebar-info-row">
+            <span>Pesanan & Info WA:</span>
+            <strong>0813-4769-6121</strong>
+        </div>
+
+        <div class="sidebar-est">
+            KEDAI UENAAK — EST. 2025
+        </div>
+    </div>
+
+    <script>
+        function setActive(element) {
+            var links = document.querySelectorAll('.menu a');
+            for (var i = 0; i < links.length; i++) {
+                links[i].classList.remove('active');
+            }
+            element.classList.add('active');
+        }
+    </script>
+</body>
+</html>

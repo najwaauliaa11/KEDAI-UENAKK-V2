@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Minuman - Kedai Uenaak | Penyegar Dahaga</title>
+    <link rel="stylesheet" href="css_uts.css">
+</head>
+
+<body>
+
+    <!-- Header Banner & Navigasi Horizontal (Bebas Halangan) -->
+    <header class="header-banner-and-nav">
+        <div class="banner-box" style="height: 180px;">
+            <img src="banner.png" alt="Banner Kedai Uenaak" class="banner-img">
+        </div>
+
+        <nav class="main-horizontal-nav">
+            <div class="nav-container-inner">
+                <a href="isi.html" class="nav-brand-badge" title="Beranda Kedai Uenaak">
+                    <div class="brand-circle-logo">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                </a>
+
+                <ul class="nav-menu-list">
+                    <li><a href="isi.html" class="nav-item-link"><i class="fa-solid fa-house"></i> BERANDA</a></li>
+                    <li><a href="makanan.html" class="nav-item-link"><i class="fa-solid fa-bowl-food"></i> MAKANAN</a></li>
+                    <li><a href="minuman.html" class="nav-item-link active"><i class="fa-solid fa-mug-hot"></i> MINUMAN</a></li>
+                    <li><a href="pesanan.html" class="nav-item-link"><i class="fa-solid fa-clipboard-check"></i> PESANAN</a></li>
+                    <li><a href="lokasi.html" class="nav-item-link"><i class="fa-solid fa-location-dot"></i> LOKASI</a></li>
+                    <li><a href="kontak.html" class="nav-item-link"><i class="fa-solid fa-phone"></i> KONTAK</a></li>
+                </ul>
+
+                <div class="nav-action-btns">
+                    <div class="status-live-pill">
+                        <span class="live-dot"></span> Buka: 08.00–14.00 WIB
+                    </div>
+                    <a href="pesanan.html" class="btn-order-pulse">
+                        <i class="fa-solid fa-cart-shopping"></i> ORDER ONLINE
+                    </a>
+                    <a href="lokasi.html" class="btn-outline-glow">
+                        <i class="fa-solid fa-location-dot"></i> LOKASI KEDAI
+                    </a>
+                    <button type="button" class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Buka Menu" style="color: #FFFFFF;">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileDrawer" class="mobile-drawer">
+            <ul class="mobile-nav-list">
+                <li><a href="isi.html" class="mobile-nav-link">Beranda</a></li>
+                <li><a href="makanan.html" class="mobile-nav-link">Makanan</a></li>
+                <li><a href="minuman.html" class="mobile-nav-link active">Minuman</a></li>
+                <li><a href="pesanan.html" class="mobile-nav-link">Pesanan</a></li>
+                <li><a href="lokasi.html" class="mobile-nav-link">Lokasi</a></li>
+                <li><a href="kontak.html" class="mobile-nav-link">Kontak</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="page-wrapper">
+        <div class="container">
+
+            <div class="section-header">
+                <span class="section-kicker">Penyegar Santapan</span>
+                <h1>Daftar Menu Minuman</h1>
+                <div class="editorial-divider"></div>
+                <p>Pilihan minuman dingin dan hangat yang diseduh segar untuk melengkapi kelezatan santapan Anda di Kedai Uenaak.</p>
+            </div>
+
+            <!-- Classic Bistro Menu Board -->
+            <div class="drinks-columns">
+
+                <!-- Kategori 1: Kopi & Cokelat -->
+                <div class="drinks-col-card">
+                    <h3><i class="fa-solid fa-mug-hot"></i> Kopi & Cokelat</h3>
+                    <ul class="drinks-table-list">
+                        <li class="drink-row">
+                            <div class="drink-meta">
+                                <span class="drink-title">Kopi Hitam</span>
+                                <span class="drink-note">Kopi robusta seduh tradisional mantap</span>
+                            </div>
+                            <div class="drink-pricing">
+                                <span class="drink-cost">Rp6.000,-</span>
+                                <a href="pesanan.html?menu=10" class="drink-add-btn" title="Pesan Kopi Hitam" aria-label="Tambah Kopi Hitam"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </li>
+                        <li class="drink-row">
+                            <div class="drink-meta">
+                                <span class="drink-title">Kopi Susu</span>
+                                <span class="drink-note">Kopi hitam berpadu susu kental manis</span>
+                            </div>
+                            <div class="drink-pricing">
+                                <span class="drink-cost">Rp8.000,-</span>
+                                <a href="pesanan.html?menu=11" class="drink-add-btn" title="Pesan Kopi Susu" aria-label="Tambah Kopi Susu"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </li>
+                        <li class="drink-row">
+                            <div class="drink-meta">
+                                <span class="drink-title">Milo</span>
+                                <span class="drink-note">Minuman cokelat malt kaya rasa</span>
+                            </div>
+                            <div class="drink-pricing">
+                                <span class="drink-cost">Rp6.000,-</span>
+                                <a href="pesanan.html?menu=12" class="drink-add-btn" title="Pesan Milo" aria-label="Tambah Milo"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Kategori 2: Aneka Es Segar -->
+                <div class="drinks-col-card">
+                    <h3><i class="fa-solid fa-lemon"></i> Aneka Es & Segar</h3>
+                    <ul class="drinks-table-list">
+                        <li class="drink-row">
+                            <div class="drink-meta">
+                                <span class="drink-title">Es Teh Jumbo</span>
+                                <span class="drink-note">Teh manis wangi dalam gelas porsi besar</span>
+                            </div>
+                            <div class="drink-pricing">
+                                <span class="drink-cost">Rp3.000,-</span>
+                                <a href="pesanan.html?menu=13" class="drink-add-btn" title="Pesan Es Teh Jumbo" aria-label="Tambah Es Teh Jumbo"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </li>
+                        <li class="drink-row">
+                            <div class="drink-meta">
+                                <span class="drink-title">Es Jeruk Kecil</span>
+                                <span class="drink-note">Jeruk peras alami segar pelepas dahaga</span>
+                            </div>
+                            <div class="drink-pricing">
+                                <span class="drink-cost">Rp4.000,-</span>
+                                <a href="pesanan.html?menu=14" class="drink-add-btn" title="Pesan Es Jeruk Kecil" aria-label="Tambah Es Jeruk Kecil"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </li>
+                        <li class="drink-row">
+                            <div class="drink-meta">
+                                <span class="drink-title">Es Jeruk Besar</span>
+                                <span class="drink-note">Jeruk peras segar dalam porsi gelas jumbo</span>
+                            </div>
+                            <div class="drink-pricing">
+                                <span class="drink-cost">Rp5.000,-</span>
+                                <a href="pesanan.html?menu=15" class="drink-add-btn" title="Pesan Es Jeruk Besar" aria-label="Tambah Es Jeruk Besar"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Kategori 3: Air Mineral & Es -->
+                <div class="drinks-col-card">
+                    <h3><i class="fa-solid fa-bottle-water"></i> Air Mineral & Dingin</h3>
+                    <ul class="drinks-table-list">
+                        <li class="drink-row">
+                            <div class="drink-meta">
+                                <span class="drink-title">Mineral Botol 600ml</span>
+                                <span class="drink-note">Air mineral kemasan botol higienis</span>
+                            </div>
+                            <div class="drink-pricing">
+                                <span class="drink-cost">Rp4.000,-</span>
+                                <a href="pesanan.html?menu=16" class="drink-add-btn" title="Pesan Mineral Botol" aria-label="Tambah Mineral Botol"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </li>
+                        <li class="drink-row">
+                            <div class="drink-meta">
+                                <span class="drink-title">Air Putih Es</span>
+                                <span class="drink-note">Air putih dingin dengan es batu bersih</span>
+                            </div>
+                            <div class="drink-pricing">
+                                <span class="drink-cost">Rp2.000,-</span>
+                                <a href="pesanan.html?menu=17" class="drink-add-btn" title="Pesan Air Putih Es" aria-label="Tambah Air Putih Es"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Tombol Aksi Pesanan -->
+            <div style="text-align: center; border-top: 1px solid var(--border); padding-top: 2.5rem;">
+                <p style="margin-bottom: 1.25rem; font-size: 0.95rem; color: var(--text-secondary);">
+                    Sudah menentukan menu pilihan Anda? Pesan langsung secara praktis melalui form pemesanan online.
+                </p>
+                <a href="pesanan.html" class="tombol">
+                    PESAN SEKARANG VIA ONLINE
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer Standalone & In-Frame -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand-title">KEDAI UENAAK</div>
+                    <div class="footer-brand-tagline">Puas • Murah • Kenyang</div>
+                    <p class="footer-desc">
+                        Kedai kuliner favorit di Pontianak yang menyajikan sajian masakan rumahan lezat, berkualitas, dan harga bersahabat.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Navigasi Cepat</h4>
+                    <ul class="footer-links">
+                        <li><a href="isi.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Beranda</a></li>
+                        <li><a href="makanan.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Menu Makanan</a></li>
+                        <li><a href="minuman.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Menu Minuman</a></li>
+                        <li><a href="pesanan.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Form Pesanan</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Jam Operasional</h4>
+                    <div class="footer-contact-item">
+                        <i class="fa-regular fa-clock"></i>
+                        <div>
+                            <strong>Buka Setiap Hari</strong><br>
+                            Pukul 08.00 - 14.00 WIB
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Hubungi Kami</h4>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            Jl. Daya Nasional, Kota Pontianak<br>(Area Masjid Al-Muhtadin)
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <div>
+                            <strong>WhatsApp:</strong><br>
+                            0813-4769-6121
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>&copy; 2025–2026 Kedai Uenaak Pontianak. Hak Cipta Dilindungi.</div>
+                <div>Najwa Aulia Nusa Putri-D1041241008</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

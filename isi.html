@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda - Kedai Uenaak | Masakan Rumah Pontianak</title>
+    <link rel="stylesheet" href="css_uts.css">
+</head>
+
+<body>
+
+    <!-- Header Banner & Navigasi Horizontal (Bebas Halangan) -->
+    <header class="header-banner-and-nav">
+        <div class="banner-box" style="height: 180px;">
+            <img src="banner.png" alt="Banner Kedai Uenaak" class="banner-img">
+        </div>
+
+        <nav class="main-horizontal-nav">
+            <div class="nav-container-inner">
+                <a href="isi.html" class="nav-brand-badge" title="Beranda Kedai Uenaak">
+                    <div class="brand-circle-logo">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                </a>
+
+                <ul class="nav-menu-list">
+                    <li><a href="isi.html" class="nav-item-link active"><i class="fa-solid fa-house"></i> BERANDA</a></li>
+                    <li><a href="makanan.html" class="nav-item-link"><i class="fa-solid fa-bowl-food"></i> MAKANAN</a></li>
+                    <li><a href="minuman.html" class="nav-item-link"><i class="fa-solid fa-mug-hot"></i> MINUMAN</a></li>
+                    <li><a href="pesanan.html" class="nav-item-link"><i class="fa-solid fa-clipboard-check"></i> PESANAN</a></li>
+                    <li><a href="lokasi.html" class="nav-item-link"><i class="fa-solid fa-location-dot"></i> LOKASI</a></li>
+                    <li><a href="kontak.html" class="nav-item-link"><i class="fa-solid fa-phone"></i> KONTAK</a></li>
+                </ul>
+
+                <div class="nav-action-btns">
+                    <div class="status-live-pill">
+                        <span class="live-dot"></span> Buka: 08.00–14.00 WIB
+                    </div>
+                    <a href="pesanan.html" class="btn-order-pulse">
+                        <i class="fa-solid fa-cart-shopping"></i> ORDER ONLINE
+                    </a>
+                    <a href="lokasi.html" class="btn-outline-glow">
+                        <i class="fa-solid fa-location-dot"></i> LOKASI KEDAI
+                    </a>
+                    <button type="button" class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Buka Menu" style="color: #FFFFFF;">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileDrawer" class="mobile-drawer">
+            <ul class="mobile-nav-list">
+                <li><a href="isi.html" class="mobile-nav-link active">Beranda</a></li>
+                <li><a href="makanan.html" class="mobile-nav-link">Makanan</a></li>
+                <li><a href="minuman.html" class="mobile-nav-link">Minuman</a></li>
+                <li><a href="pesanan.html" class="mobile-nav-link">Pesanan</a></li>
+                <li><a href="lokasi.html" class="mobile-nav-link">Lokasi</a></li>
+                <li><a href="kontak.html" class="mobile-nav-link">Kontak</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="page-wrapper">
+        <div class="container">
+
+            <!-- Editorial Hero Section -->
+            <section class="editorial-hero">
+                <div class="hero-grid">
+                    <div>
+                        <div class="hero-kicker">Kedai Makanan Rumahan</div>
+                        <h1 class="hero-title">
+                            Selamat Datang di <br>
+                            <em>Kedai Uenaak</em>
+                        </h1>
+                        <p class="subjudul" style="margin-bottom: 1rem;">EST. 2025</p>
+                        <p class="hero-desc">
+                            Nikmati berbagai pilihan makanan dan minuman dengan rasa yang enak dan harga yang bersahabat. Disajikan hangat setiap hari dari bahan masakan segar pilihan untuk menemani santap makan Anda di Pontianak.
+                        </p>
+                        <div class="hero-actions">
+                            <a href="makanan.html" class="tombol">
+                                LIHAT BUKU MENU <i class="fa-solid fa-arrow-right" style="font-size: 0.8rem;"></i>
+                            </a>
+                            <a href="pesanan.html" class="tombol-ulang">
+                                PESAN SEKARANG
+                            </a>
+                        </div>
+                        <div class="hero-meta-strip">
+                            <div class="hero-meta-item">
+                                <strong>Buka Setiap Hari:</strong> 08.00 – 14.00 WIB
+                            </div>
+                            <div class="hero-meta-item">
+                                <strong>Lokasi:</strong> Area Masjid Al-Muhtadin Untan
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-vignette">
+                        <div class="vignette-frame">
+                            <img src="foto makanan/Rice bowl ayam suwir kemangi.png" alt="Rice Bowl Ayam Suwir Kemangi" class="vignette-img">
+                            <div class="vignette-caption">
+                                <div>
+                                    <h3>Rice Bowl Ayam Suwir Kemangi</h3>
+                                    <p>Menu andalan dengan wangi kemangi khas & lauk lengkap</p>
+                                </div>
+                                <div class="vignette-price">Rp10.000,-</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4 Keunggulan Utama Kedai (Perks Strip) -->
+            <section class="perks-strip">
+                <div class="perk-card">
+                    <div class="perk-icon"><i class="fa-solid fa-bowl-rice"></i></div>
+                    <h4 class="perk-title">10+ Menu Rumahan</h4>
+                    <p class="perk-desc">Pilihan rice bowl, olahan ayam crispy/bakar, soto gurih, & indomie selera nusantara.</p>
+                </div>
+                <div class="perk-card">
+                    <div class="perk-icon"><i class="fa-solid fa-wallet"></i></div>
+                    <h4 class="perk-title">Serba Rp10.000</h4>
+                    <p class="perk-desc">Porsi mengenyangkan dengan harga jujur ramah kantong mahasiswa & civitas kampus.</p>
+                </div>
+                <div class="perk-card">
+                    <div class="perk-icon"><i class="fa-solid fa-seedling"></i></div>
+                    <h4 class="perk-title">100% Segar & Halal</h4>
+                    <p class="perk-desc">Bumbu rempah asli Nusantara dimasak baru setiap pagi hari tanpa bahan pengawet.</p>
+                </div>
+                <div class="perk-card">
+                    <div class="perk-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <h4 class="perk-title">Dekat Masjid Untan</h4>
+                    <p class="perk-desc">Lokasi sangat strategis di area Masjid Al-Muhtadin Kampus Untan, mudah dijangkau.</p>
+                </div>
+            </section>
+
+            <!-- Cerita & Karakter Kedai (Authentic Story) -->
+            <section class="story-strip">
+                <div class="story-heading">
+                    <span class="section-kicker">Tentang Kami</span>
+                    <h2>Sajian Hangat Dari Dapur Sederhana</h2>
+                    <p class="subjudul">Pontianak, Kalimantan Barat</p>
+                </div>
+                <div class="story-body">
+                    <p>
+                        Kedai Uenaak hadir untuk menyajikan kehangatan masakan rumahan bagi mahasiswa, dosen, pekerja kantor, dan warga sekitar kampus Universitas Tanjungpura. Kami mengolah setiap resep dengan bumbu asli Nusantara yang berani rasa, gurih pas, dan memuaskan.
+                    </p>
+                    <p>
+                        Seluruh menu makanan utama kami hadirkan dengan harga terjangkau serba <strong>Rp10.000,-</strong> tanpa mengurangi porsi maupun mutu bahan. Kami ingin setiap pengunjung dapat makan dengan rasa puas, tenang di kantong, dan pulang dalam keadaan kenyang.
+                    </p>
+                    <div class="story-pillars">
+                        <div class="pillar">
+                            <h4>Puas</h4>
+                            <p>Porsi mantap dengan lauk lengkap untuk mengisi energi harian.</p>
+                        </div>
+                        <div class="pillar">
+                            <h4>Murah</h4>
+                            <p>Harga jujur dan bersahabat untuk semua kalangan.</p>
+                        </div>
+                        <div class="pillar">
+                            <h4>Kenyang</h4>
+                            <p>Bahan masakan segar diolah higienis dan halal setiap pagi.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Paket Hemat Mahasiswa (Combo Specials) -->
+            <section style="margin-bottom: 4rem;">
+                <div class="section-header">
+                    <span class="section-kicker">Hemat & Komplit</span>
+                    <h2>PAKET HEMAT MAHASISWA</h2>
+                    <div class="editorial-divider"></div>
+                    <p>Kombinasi makanan lezat dan minuman segar pilihan paling laris untuk santap siang hemat berkualitas.</p>
+                </div>
+
+                <div class="combo-grid">
+                    <!-- Combo 1 -->
+                    <div class="combo-card">
+                        <span class="combo-badge-tag">HEMAT 2.000</span>
+                        <div class="combo-image-box">
+                            <img src="foto makanan/nasiayamgeprek.png" alt="Paket Nampol 1">
+                        </div>
+                        <div class="combo-body">
+                            <div>
+                                <h3 class="combo-name">Paket Nampol 1</h3>
+                                <p class="combo-includes">Nasi Ayam Geprek Sambal Pedas + Es Teh Manis Jumbo Dingin Segar</p>
+                            </div>
+                            <div>
+                                <div class="combo-pricing-bar">
+                                    <span class="combo-price">Rp13.000,-</span>
+                                    <span class="combo-strikethrough">Rp15.000</span>
+                                </div>
+                                <a href="pesanan.html?menu=1" class="tombol" style="width: 100%; text-align: center;">PESAN PAKET INI</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Combo 2 -->
+                    <div class="combo-card">
+                        <span class="combo-badge-tag">PALING LARIS</span>
+                        <div class="combo-image-box">
+                            <img src="foto makanan/Rice bowl ayam suwir kemangi.png" alt="Paket Juara 2">
+                        </div>
+                        <div class="combo-body">
+                            <div>
+                                <h3 class="combo-name">Paket Juara 2</h3>
+                                <p class="combo-includes">Rice Bowl Ayam Suwir Kemangi Wangi + Es Jeruk Peras Asli Pontianak</p>
+                            </div>
+                            <div>
+                                <div class="combo-pricing-bar">
+                                    <span class="combo-price">Rp15.000,-</span>
+                                    <span class="combo-strikethrough">Rp17.000</span>
+                                </div>
+                                <a href="pesanan.html?menu=5" class="tombol" style="width: 100%; text-align: center;">PESAN PAKET INI</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Combo 3 -->
+                    <div class="combo-card">
+                        <span class="combo-badge-tag">SEGAR GURIH</span>
+                        <div class="combo-image-box">
+                            <img src="foto makanan/sotoayam.png" alt="Paket Segar 3">
+                        </div>
+                        <div class="combo-body">
+                            <div>
+                                <h3 class="combo-name">Paket Segar 3</h3>
+                                <p class="combo-includes">Soto Ayam Lamongan Kuah Gurih Koya + Nasi Putih + Es Sirup Manis</p>
+                            </div>
+                            <div>
+                                <div class="combo-pricing-bar">
+                                    <span class="combo-price">Rp15.000,-</span>
+                                    <span class="combo-strikethrough">Rp17.000</span>
+                                </div>
+                                <a href="pesanan.html?menu=9" class="tombol" style="width: 100%; text-align: center;">PESAN PAKET INI</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Menu Favorit Section -->
+            <section style="margin-bottom: 4rem;">
+                <div class="section-header">
+                    <span class="section-kicker">Pilihan Pengunjung</span>
+                    <h2>MENU FAVORIT HARIAN</h2>
+                    <div class="editorial-divider"></div>
+                    <p>Tiga hidangan istimewa yang paling sering dipesan dan dinikmati oleh para pelanggan setia kami.</p>
+                </div>
+
+                <table class="tabel-favorit">
+                    <tr>
+                        <td>
+                            <img src="foto makanan/nasiayamgeprek.png" class="foto" alt="Nasi Ayam Geprek">
+                            <h3>Nasi Ayam Geprek</h3>
+                            <p class="deskripsi">Ayam krispi gurih dengan sambal geprek pedas segar khas kedai, disajikan bersama nasi putih pulen dan mentimun.</p>
+                            <div class="menu-card-footer" style="margin-top: 1rem;">
+                                <span class="card-price">Rp10.000,-</span>
+                                <a href="pesanan.html?menu=1" class="food-add-btn" title="Pesan Nasi Ayam Geprek" aria-label="Tambah Nasi Ayam Geprek"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </td>
+
+                        <td>
+                            <img src="foto makanan/Rice bowl ayam suwir kemangi.png" class="foto" alt="Ayam Suwir Kemangi">
+                            <h3>Rice Bowl Ayam Suwir Kemangi</h3>
+                            <p class="deskripsi">Nasi hangat dengan suwiran daging ayam berpadu aroma daun kemangi pedas gurih, mie goreng, dan telur/nugget.</p>
+                            <div class="menu-card-footer" style="margin-top: 1rem;">
+                                <span class="card-price">Rp10.000,-</span>
+                                <a href="pesanan.html?menu=5" class="food-add-btn" title="Pesan Rice Bowl Ayam Suwir Kemangi" aria-label="Tambah Rice Bowl Ayam Suwir Kemangi"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </td>
+
+                        <td>
+                            <img src="foto makanan/ricebowlayamteriyaki.png" class="foto" alt="Ayam Teriyaki">
+                            <h3>Rice Bowl Ayam Teriyaki</h3>
+                            <p class="deskripsi">Potongan ayam dengan saus teriyaki manis gurih meresap, disajikan praktis bersama mie dan irisan telur.</p>
+                            <div class="menu-card-footer" style="margin-top: 1rem;">
+                                <span class="card-price">Rp10.000,-</span>
+                                <a href="pesanan.html?menu=7" class="food-add-btn" title="Pesan Rice Bowl Ayam Teriyaki" aria-label="Tambah Rice Bowl Ayam Teriyaki"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+                <div style="text-align: center; margin-top: 1.5rem;">
+                    <a href="makanan.html" class="tombol-ulang">
+                        LIHAT SELURUH 10 MENU MAKANAN <i class="fa-solid fa-arrow-right" style="font-size: 0.8rem; margin-left: 0.35rem;"></i>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Testimoni & Suara Pengunjung UNTAN -->
+            <section style="margin-bottom: 4rem;">
+                <div class="section-header">
+                    <span class="section-kicker">Suara Pelanggan</span>
+                    <h2>KATA MEREKA TENTANG KEDAI UENAAK</h2>
+                    <div class="editorial-divider"></div>
+                    <p>Ulasan jujur dari teman-teman mahasiswa, dosen, dan penikmat kuliner di lingkungan kampus Universitas Tanjungpura.</p>
+                </div>
+
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div>
+                            <div class="review-stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="review-quote">
+                                "Rice bowl ayam suwir kemanginya bener-bener mantap dan gurih! Bumbunya meresap sampai ke serat ayam, porsi nasinya banyak pas banget buat anak kos pas jam istirahat kuliah."
+                            </p>
+                        </div>
+                        <div class="reviewer-meta">
+                            <div class="reviewer-avatar">AP</div>
+                            <div class="reviewer-info">
+                                <h5>Annisa Putri</h5>
+                                <span>Mahasiswi FKIP UNTAN</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div>
+                            <div class="review-stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="review-quote">
+                                "Penyelamat akhir bulan mahasiswa teknik! Cuma 10 ribu udah dapet nasi ayam geprek porsi kenyang, sambal gepreknya fresh pedas nampol. Pelayanan juga cepet banget."
+                            </p>
+                        </div>
+                        <div class="reviewer-meta">
+                            <div class="reviewer-avatar">RA</div>
+                            <div class="reviewer-info">
+                                <h5>Reza Aditya</h5>
+                                <span>Mahasiswa Teknik UNTAN</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div>
+                            <div class="review-stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="review-quote">
+                                "Tempat langganan setelah sholat di Masjid Al-Muhtadin. Bersih, adem, rasa soto ayam dan ayam bakarnya sangat otentik. Sangat direkomendasikan untuk makan siang."
+                            </p>
+                        </div>
+                        <div class="reviewer-meta">
+                            <div class="reviewer-avatar">HK</div>
+                            <div class="reviewer-info">
+                                <h5>Pak Hendra K.</h5>
+                                <span>Sivitas Akademika Untan</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3 Langkah Pemesanan Cepat -->
+            <section style="margin-bottom: 4rem;">
+                <div class="section-header">
+                    <span class="section-kicker">Alur Praktis</span>
+                    <h2>CARA MUDAH MEMESAN</h2>
+                    <div class="editorial-divider"></div>
+                    <p>Hanya dengan 3 langkah sederhana, sajian hangat Kedai Uenaak siap menemani waktu santap Anda.</p>
+                </div>
+
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <span class="step-number">01</span>
+                        <div class="step-icon"><i class="fa-solid fa-book-open"></i></div>
+                        <h4 class="step-title">Pilih Menu Favorit</h4>
+                        <p class="step-desc">Jelajahi 10 menu makanan lezat dan 8 varian minuman segar kami dengan harga tertera yang jelas.</p>
+                    </div>
+
+                    <div class="step-card">
+                        <span class="step-number">02</span>
+                        <div class="step-icon"><i class="fa-solid fa-file-pen"></i></div>
+                        <h4 class="step-title">Isi Form Pesanan</h4>
+                        <p class="step-desc">Masukkan data nama, nomor HP, jumlah porsi, serta opsi santap di tempat (dine in) atau bungkus (take away).</p>
+                    </div>
+
+                    <div class="step-card">
+                        <span class="step-number">03</span>
+                        <div class="step-icon"><i class="fa-solid fa-utensils"></i></div>
+                        <h4 class="step-title">Konfirmasi & Nikmati</h4>
+                        <p class="step-desc">Konfirmasi pesanan via WhatsApp atau QRIS resmi, dan makanan hangat siap dinikmati atau diambil.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Banner Strip -->
+            <div class="cta-banner-strip">
+                <div class="cta-banner-text">
+                    <h3>Lapar Sehabis Kuliah atau Beraktivitas?</h3>
+                    <p>Mampir langsung ke Kedai Uenaak di area Masjid Al-Muhtadin Untan. Tersedia tempat makan bersih, suasana santai, dan parkir luas. Atau pesan langsung sekarang!</p>
+                </div>
+                <div class="cta-banner-actions">
+                    <a href="pesanan.html" class="tombol" style="background: var(--accent); border-color: var(--accent); white-space: nowrap;">
+                        <i class="fa-solid fa-cart-shopping"></i> PESAN SEKARANG
+                    </a>
+                    <a href="lokasi.html" class="tombol-ulang" style="border-color: rgba(255,255,255,0.7); color: #FFFFFF; white-space: nowrap;">
+                        <i class="fa-solid fa-location-dot"></i> PANDUAN LOKASI
+                    </a>
+                </div>
+            </div>
+
+            <!-- Editorial Slogan Block -->
+            <section style="border-top: 1px solid var(--border); padding-top: 3rem; margin-bottom: 2rem; text-align: center;">
+                <span class="section-kicker">Slogan Kami</span>
+                <h2 style="font-size: 1.85rem; letter-spacing: 0.04em; margin-bottom: 0.5rem;">
+                    PUAS — MURAH — KENYANG
+                </h2>
+                <p style="max-width: 540px; margin: 0 auto 1.5rem auto; font-size: 0.95rem;">
+                    Komitmen kami untuk selalu menyajikan santapan bermutu dengan keramahan khas Pontianak setiap harinya.
+                </p>
+                <a href="lokasi.html" class="tombol">
+                    KUNJUNGI KEDAI KAMI
+                </a>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer Standalone & In-Frame -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand-title">KEDAI UENAAK</div>
+                    <div class="footer-brand-tagline">Puas • Murah • Kenyang</div>
+                    <p class="footer-desc">
+                        Kedai kuliner favorit di Pontianak yang menyajikan sajian masakan rumahan lezat, berkualitas, dan harga bersahabat.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Navigasi Cepat</h4>
+                    <ul class="footer-links">
+                        <li><a href="isi.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Beranda</a></li>
+                        <li><a href="makanan.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Menu Makanan</a></li>
+                        <li><a href="minuman.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Menu Minuman</a></li>
+                        <li><a href="pesanan.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Form Pesanan</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Jam Operasional</h4>
+                    <div class="footer-contact-item">
+                        <i class="fa-regular fa-clock"></i>
+                        <div>
+                            <strong>Buka Setiap Hari</strong><br>
+                            Pukul 08.00 - 14.00 WIB
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Hubungi Kami</h4>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            Jl. Daya Nasional, Kota Pontianak<br>(Area Masjid Al-Muhtadin)
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <div>
+                            <strong>WhatsApp:</strong><br>
+                            0813-4769-6121
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>&copy; 2025–2026 Kedai Uenaak Pontianak. Hak Cipta Dilindungi.</div>
+                <div>Najwa Aulia Nusa Putri-D1041241008</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header - Kedai Uenaak</title>
+    <link rel="stylesheet" href="css_uts.css">
+    <style>
+        body.halaman-judul {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            background-color: #142E21;
+        }
+
+        .header-banner-and-nav {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .banner-box {
+            width: 100%;
+            flex: 1 1 auto;
+            height: calc(100vh - 56px);
+            overflow: hidden;
+            background-color: #142E21;
+        }
+
+        .banner-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+        }
+
+        @media (max-width: 900px) {
+            .nav-menu-list {
+                gap: 0.15rem;
+            }
+            .nav-item-link {
+                font-size: 0.76rem;
+                padding: 0.35rem 0.55rem;
+            }
+            .status-live-pill {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu-list {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body class="halaman-judul">
+    <header class="header-banner-and-nav">
+        <!-- 1. Banner Image Bersih Tanpa Tertutup Navigasi -->
+        <div class="banner-box">
+            <img src="banner.png" alt="Banner Kedai Uenaak - Puas, Murah, Kenyang" class="banner-img">
+        </div>
+
+        <!-- 2. Navigasi Horizontal Tepat di Bawah Banner (Bebas Halangan) -->
+        <nav class="main-horizontal-nav">
+            <div class="nav-container-inner">
+                <!-- Brand Circle Logo with Animation -->
+                <a href="isi.html" target="isi" class="nav-brand-badge" title="Beranda Kedai Uenaak">
+                    <div class="brand-circle-logo">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                </a>
+
+                <!-- Navigation Links with Underline Animations -->
+                <ul class="nav-menu-list">
+                    <li><a href="isi.html" target="isi" class="nav-item-link active"><i class="fa-solid fa-house"></i> BERANDA</a></li>
+                    <li><a href="makanan.html" target="isi" class="nav-item-link"><i class="fa-solid fa-bowl-food"></i> MAKANAN</a></li>
+                    <li><a href="minuman.html" target="isi" class="nav-item-link"><i class="fa-solid fa-mug-hot"></i> MINUMAN</a></li>
+                    <li><a href="pesanan.html" target="isi" class="nav-item-link"><i class="fa-solid fa-clipboard-check"></i> PESANAN</a></li>
+                    <li><a href="lokasi.html" target="isi" class="nav-item-link"><i class="fa-solid fa-location-dot"></i> LOKASI</a></li>
+                    <li><a href="kontak.html" target="isi" class="nav-item-link"><i class="fa-solid fa-phone"></i> KONTAK</a></li>
+                </ul>
+
+                <!-- Actions with Pulse Animation -->
+                <div class="nav-action-btns">
+                    <div class="status-live-pill">
+                        <span class="live-dot"></span> Buka: 08.00–14.00 WIB
+                    </div>
+                    <a href="pesanan.html" target="isi" class="btn-order-pulse">
+                        <i class="fa-solid fa-cart-shopping"></i> ORDER ONLINE
+                    </a>
+                    <a href="lokasi.html" target="isi" class="btn-outline-glow">
+                        <i class="fa-solid fa-location-dot"></i> LOKASI KEDAI
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <script>
+        document.querySelectorAll('.nav-item-link, .btn-order-pulse, .btn-outline-glow, .nav-brand-badge').forEach(function(item) {
+            item.addEventListener('click', function() {
+                var targetHref = this.getAttribute('href');
+                document.querySelectorAll('.nav-item-link').forEach(function(l) {
+                    l.classList.remove('active');
+                    if (l.getAttribute('href') === targetHref) {
+                        l.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

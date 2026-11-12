@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lokasi Kami - Kedai Uenaak Pontianak</title>
+    <link rel="stylesheet" href="css_uts.css">
+</head>
+
+<body>
+
+    <!-- Header Banner & Navigasi Horizontal (Bebas Halangan) -->
+    <header class="header-banner-and-nav">
+        <div class="banner-box" style="height: 180px;">
+            <img src="banner.png" alt="Banner Kedai Uenaak" class="banner-img">
+        </div>
+
+        <nav class="main-horizontal-nav">
+            <div class="nav-container-inner">
+                <a href="isi.html" class="nav-brand-badge" title="Beranda Kedai Uenaak">
+                    <div class="brand-circle-logo">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                </a>
+
+                <ul class="nav-menu-list">
+                    <li><a href="isi.html" class="nav-item-link"><i class="fa-solid fa-house"></i> BERANDA</a></li>
+                    <li><a href="makanan.html" class="nav-item-link"><i class="fa-solid fa-bowl-food"></i> MAKANAN</a></li>
+                    <li><a href="minuman.html" class="nav-item-link"><i class="fa-solid fa-mug-hot"></i> MINUMAN</a></li>
+                    <li><a href="pesanan.html" class="nav-item-link"><i class="fa-solid fa-clipboard-check"></i> PESANAN</a></li>
+                    <li><a href="lokasi.html" class="nav-item-link active"><i class="fa-solid fa-location-dot"></i> LOKASI</a></li>
+                    <li><a href="kontak.html" class="nav-item-link"><i class="fa-solid fa-phone"></i> KONTAK</a></li>
+                </ul>
+
+                <div class="nav-action-btns">
+                    <div class="status-live-pill">
+                        <span class="live-dot"></span> Buka: 08.00–14.00 WIB
+                    </div>
+                    <a href="pesanan.html" class="btn-order-pulse">
+                        <i class="fa-solid fa-cart-shopping"></i> ORDER ONLINE
+                    </a>
+                    <a href="lokasi.html" class="btn-outline-glow">
+                        <i class="fa-solid fa-location-dot"></i> LOKASI KEDAI
+                    </a>
+                    <button type="button" class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Buka Menu" style="color: #FFFFFF;">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileDrawer" class="mobile-drawer">
+            <ul class="mobile-nav-list">
+                <li><a href="isi.html" class="mobile-nav-link">Beranda</a></li>
+                <li><a href="makanan.html" class="mobile-nav-link">Makanan</a></li>
+                <li><a href="minuman.html" class="mobile-nav-link">Minuman</a></li>
+                <li><a href="pesanan.html" class="mobile-nav-link">Pesanan</a></li>
+                <li><a href="lokasi.html" class="mobile-nav-link active">Lokasi</a></li>
+                <li><a href="kontak.html" class="mobile-nav-link">Kontak</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="page-wrapper">
+        <div class="container">
+
+            <div class="section-header">
+                <span class="section-kicker">Petunjuk Arah & Waktu Berkunjung</span>
+                <h1>LOKASI KAMI</h1>
+                <div class="editorial-divider"></div>
+                <p>Kunjungi kedai kami langsung di area kampus Universitas Tanjungpura Pontianak untuk menikmati santap
+                    makan di tempat yang asri dan nyaman.</p>
+            </div>
+
+            <div class="info-card-grid">
+
+                <!-- Detail Alamat & Panduan -->
+                <div class="info-details-box">
+
+                    <div class="kotak" style="margin: 0; width: 100%; max-width: none;">
+                        <h2 style="margin-top: 0; margin-bottom: 0.75rem;">KEDAI UENAAK</h2>
+                        <p style="font-size: 0.95rem; margin-bottom: 0.4rem; line-height: 1.6;">
+                            <strong>Alamat:</strong> Jl. Daya Nasional, Kota Pontianak. Masuk ke dalam Masjid
+                            Al-Muhtadin
+                        </p>
+                        <p style="font-size: 0.95rem; margin-bottom: 0; line-height: 1.6;">
+                            <strong>Jam buka:</strong> 08.00 - 14.00 WIB
+                        </p>
+                    </div>
+
+                    <div class="info-block">
+                        <h3>Panduan Menuju Lokasi</h3>
+                        <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-secondary);">
+                            Kedai kami terletak di dalam lingkungan Masjid Al-Muhtadin, kawasan kampus Universitas
+                            Tanjungpura (Untan), Jl. Daya Nasional. Setelah memasuki gerbang utama masjid, Anda dapat
+                            menuju area pujasera kantin yang teduh di sisi samping masjid.
+                        </p>
+                    </div>
+
+                    <div class="info-block">
+                        <h3>Fasilitas Pengunjung</h3>
+                        <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-secondary);">
+                            Tersedia area parkir kendaraan roda dua dan roda empat yang luas, sarana ibadah sholat dan
+                            tempat wudhu yang bersih, serta meja makan yang nyaman untuk bersantap bersama rekan maupun
+                            keluarga.
+                        </p>
+                    </div>
+
+                    <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 0.5rem;">
+                        <a href="https://maps.google.com/?q=Masjid+Al-Muhtadin+Pontianak" target="_blank"
+                            rel="noopener noreferrer" class="tombol">
+                            BUKA DI GOOGLE MAPS
+                        </a>
+                        <a href="https://wa.me/6281347696121?text=Halo%20Kedai%20Uenaak,%20saya%20ingin%20menanyakan%20rute%20lokasi"
+                            target="_blank" rel="noopener noreferrer" class="tombol-ulang">
+                            TANYA RUTE VIA WHATSAPP
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Peta Google Maps Embed -->
+                <div class="map-wrapper">
+                    <iframe title="Peta Lokasi Kedai Uenaak di Masjid Al-Muhtadin Pontianak"
+                        src="https://maps.google.com/maps?q=Masjid+Al-Muhtadin+Universitas+Tanjungpura+Pontianak&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer Standalone & In-Frame -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand-title">KEDAI UENAAK</div>
+                    <div class="footer-brand-tagline">Puas • Murah • Kenyang</div>
+                    <p class="footer-desc">
+                        Kedai kuliner favorit di Pontianak yang menyajikan sajian masakan rumahan lezat, berkualitas,
+                        dan harga bersahabat.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Navigasi Cepat</h4>
+                    <ul class="footer-links">
+                        <li><a href="isi.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Beranda</a>
+                        </li>
+                        <li><a href="makanan.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Menu
+                                Makanan</a></li>
+                        <li><a href="minuman.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Menu
+                                Minuman</a></li>
+                        <li><a href="pesanan.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Form
+                                Pesanan</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Jam Operasional</h4>
+                    <div class="footer-contact-item">
+                        <i class="fa-regular fa-clock"></i>
+                        <div>
+                            <strong>Buka Setiap Hari</strong><br>
+                            Pukul 08.00 - 14.00 WIB
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Hubungi Kami</h4>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            Jl. Daya Nasional, Kota Pontianak<br>(Area Masjid Al-Muhtadin)
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <div>
+                            <strong>WhatsApp:</strong><br>
+                            0813-4769-6121
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>&copy; 2025–2026 Kedai Uenaak Pontianak. Hak Cipta Dilindungi.</div>
+                <div>Najwa Aulia Nusa Putri-D1041241008</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

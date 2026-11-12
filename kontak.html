@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubungi Kami - Kedai Uenaak Pontianak</title>
+    <link rel="stylesheet" href="css_uts.css">
+    <style>
+        .contact-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.75rem;
+            margin-bottom: 3rem;
+        }
+
+        .method-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            padding: 1.75rem;
+            display: flex;
+            flex-direction: column;
+            box-shadow: var(--shadow-subtle);
+        }
+
+        .method-card h3 {
+            font-family: var(--font-serif);
+            font-size: 1.15rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .method-card p {
+            font-size: 0.88rem;
+            color: var(--text-secondary);
+            line-height: 1.55;
+            margin-bottom: 1.25rem;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Banner & Navigasi Horizontal (Bebas Halangan) -->
+    <header class="header-banner-and-nav">
+        <div class="banner-box" style="height: 180px;">
+            <img src="banner.png" alt="Banner Kedai Uenaak" class="banner-img">
+        </div>
+
+        <nav class="main-horizontal-nav">
+            <div class="nav-container-inner">
+                <a href="isi.html" class="nav-brand-badge" title="Beranda Kedai Uenaak">
+                    <div class="brand-circle-logo">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                </a>
+
+                <ul class="nav-menu-list">
+                    <li><a href="isi.html" class="nav-item-link"><i class="fa-solid fa-house"></i> BERANDA</a></li>
+                    <li><a href="makanan.html" class="nav-item-link"><i class="fa-solid fa-bowl-food"></i> MAKANAN</a></li>
+                    <li><a href="minuman.html" class="nav-item-link"><i class="fa-solid fa-mug-hot"></i> MINUMAN</a></li>
+                    <li><a href="pesanan.html" class="nav-item-link"><i class="fa-solid fa-clipboard-check"></i> PESANAN</a></li>
+                    <li><a href="lokasi.html" class="nav-item-link"><i class="fa-solid fa-location-dot"></i> LOKASI</a></li>
+                    <li><a href="kontak.html" class="nav-item-link active"><i class="fa-solid fa-phone"></i> KONTAK</a></li>
+                </ul>
+
+                <div class="nav-action-btns">
+                    <div class="status-live-pill">
+                        <span class="live-dot"></span> Buka: 08.00–14.00 WIB
+                    </div>
+                    <a href="pesanan.html" class="btn-order-pulse">
+                        <i class="fa-solid fa-cart-shopping"></i> ORDER ONLINE
+                    </a>
+                    <a href="lokasi.html" class="btn-outline-glow">
+                        <i class="fa-solid fa-location-dot"></i> LOKASI KEDAI
+                    </a>
+                    <button type="button" class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Buka Menu" style="color: #FFFFFF;">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileDrawer" class="mobile-drawer">
+            <ul class="mobile-nav-list">
+                <li><a href="isi.html" class="mobile-nav-link">Beranda</a></li>
+                <li><a href="makanan.html" class="mobile-nav-link">Makanan</a></li>
+                <li><a href="minuman.html" class="mobile-nav-link">Minuman</a></li>
+                <li><a href="pesanan.html" class="mobile-nav-link">Pesanan</a></li>
+                <li><a href="lokasi.html" class="mobile-nav-link">Lokasi</a></li>
+                <li><a href="kontak.html" class="mobile-nav-link active">Kontak</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="page-wrapper">
+        <div class="container">
+
+            <div class="section-header">
+                <span class="section-kicker">Layanan Informasi & Pelanggan</span>
+                <h1>HUBUNGI KAMI</h1>
+                <div class="editorial-divider"></div>
+                <p>Kami siap melayani kebutuhan makan siang harian, pesanan katering nasi kotak, serta konfirmasi pembayaran Anda.</p>
+            </div>
+
+            <!-- Kartu Info Asli (.kotak) -->
+            <div class="kotak" style="margin-top: 0; margin-bottom: 2.5rem;">
+                <h2 style="margin-top: 0; margin-bottom: 0.5rem;">KEDAI UENAAK</h2>
+                <p style="font-size: 1rem; margin-bottom: 0.5rem;">
+                    <strong>WhatsApp:</strong> 081347696121
+                </p>
+                <p class="petunjuk" style="margin: 0;">
+                    Layanan kontak aktif setiap hari selama jam operasional kedai (08.00 – 14.00 WIB) untuk konfirmasi pesanan, pertanyaan menu, dan pesanan acara.
+                </p>
+            </div>
+
+            <!-- Saluran Komunikasi & Layanan -->
+            <div class="contact-methods">
+
+                <div class="method-card">
+                    <h3>Chat WhatsApp Resmi</h3>
+                    <p>
+                        Saluran komunikasi paling cepat dan praktis untuk konfirmasi pesanan, kirim bukti transfer QRIS, atau tanya ketersediaan menu hari ini.
+                    </p>
+                    <a href="https://wa.me/6281347696121?text=Halo%20Kedai%20Uenaak,%20saya%20ingin%20bertanya%20mengenai%20menu%20dan%20pesanan" target="_blank" rel="noopener noreferrer" class="tombol">
+                        CHAT VIA WHATSAPP
+                    </a>
+                </div>
+
+                <div class="method-card">
+                    <h3>Pesanan Nasi Kotak / Katering</h3>
+                    <p>
+                        Melayani pesanan nasi kotak dan rice bowl dalam jumlah besar untuk kegiatan seminar kampus, rapat fakultas, perkantoran, maupun syukuran.
+                    </p>
+                    <a href="https://wa.me/6281347696121?text=Halo%20Kedai%20Uenaak,%20saya%20ingin%20memesan%20katering%20nasi%20kotak" target="_blank" rel="noopener noreferrer" class="tombol-ulang">
+                        KONSULTASI KATERING
+                    </a>
+                </div>
+
+                <div class="method-card">
+                    <h3>Kunjungi Langsung</h3>
+                    <p>
+                        Ingin bersantap hangat di tempat? Kunjungi kedai kami di area pujasera Masjid Al-Muhtadin, Jl. Daya Nasional, kawasan kampus Untan Pontianak.
+                    </p>
+                    <a href="lokasi.html" class="tombol-ulang">
+                        LIHAT PETA LOKASI
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Bagian Pertanyaan Umum (FAQ) -->
+            <section style="border-top: 1px solid var(--border); padding-top: 3rem; margin-bottom: 2rem;">
+                <div class="section-header" style="margin-bottom: 2rem;">
+                    <span class="section-kicker">Informasi Praktis</span>
+                    <h2>Pertanyaan yang Sering Diajukan</h2>
+                </div>
+
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h4>Bagaimana cara memesan online?</h4>
+                        <p>Buka halaman Pesanan, pilih jumlah menu makanan dan minuman yang Anda inginkan, isi identitas, lalu lanjutkan ke pembayaran scan QRIS digital.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h4>Apakah melayani pesanan katering partai besar?</h4>
+                        <p>Ya, kami siap melayani pesanan puluhan hingga ratusan porsi nasi kotak atau rice bowl. Disarankan menghubungi kami minimal H-1 via WhatsApp.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h4>Jam berapa batas pesanan terakhir (last order)?</h4>
+                        <p>Kedai kami buka mulai pukul 08.00 WIB dan menerima pesanan terakhir pada pukul 13.45 WIB setiap harinya.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h4>Apakah tersedia opsi pengantaran (delivery)?</h4>
+                        <p>Ya, untuk area sekitar Universitas Tanjungpura dan sekitarnya kami menyediakan opsi pengantaran dengan konfirmasi ongkos kirim melalui WhatsApp.</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer Standalone & In-Frame -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand-title">KEDAI UENAAK</div>
+                    <div class="footer-brand-tagline">Puas • Murah • Kenyang</div>
+                    <p class="footer-desc">
+                        Kedai kuliner favorit di Pontianak yang menyajikan sajian masakan rumahan lezat, berkualitas, dan harga bersahabat.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Navigasi Cepat</h4>
+                    <ul class="footer-links">
+                        <li><a href="isi.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Beranda</a></li>
+                        <li><a href="makanan.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Menu Makanan</a></li>
+                        <li><a href="minuman.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Menu Minuman</a></li>
+                        <li><a href="pesanan.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Form Pesanan</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Jam Operasional</h4>
+                    <div class="footer-contact-item">
+                        <i class="fa-regular fa-clock"></i>
+                        <div>
+                            <strong>Buka Setiap Hari</strong><br>
+                            Pukul 08.00 - 14.00 WIB
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Hubungi Kami</h4>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            Jl. Daya Nasional, Kota Pontianak<br>(Area Masjid Al-Muhtadin)
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <div>
+                            <strong>WhatsApp:</strong><br>
+                            0813-4769-6121
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>&copy; 2025–2026 Kedai Uenaak Pontianak. Hak Cipta Dilindungi.</div>
+                <div>Najwa Aulia Nusa Putri-D1041241008</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

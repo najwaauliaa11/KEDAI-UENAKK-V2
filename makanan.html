@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Makanan - Kedai Uenaak | Masakan Rumah Pontianak</title>
+    <link rel="stylesheet" href="css_uts.css">
+</head>
+
+<body>
+
+    <!-- Header Banner & Navigasi Horizontal (Bebas Halangan) -->
+    <header class="header-banner-and-nav">
+        <div class="banner-box" style="height: 180px;">
+            <img src="banner.png" alt="Banner Kedai Uenaak" class="banner-img">
+        </div>
+
+        <nav class="main-horizontal-nav">
+            <div class="nav-container-inner">
+                <a href="isi.html" class="nav-brand-badge" title="Beranda Kedai Uenaak">
+                    <div class="brand-circle-logo">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                </a>
+
+                <ul class="nav-menu-list">
+                    <li><a href="isi.html" class="nav-item-link"><i class="fa-solid fa-house"></i> BERANDA</a></li>
+                    <li><a href="makanan.html" class="nav-item-link active"><i class="fa-solid fa-bowl-food"></i> MAKANAN</a></li>
+                    <li><a href="minuman.html" class="nav-item-link"><i class="fa-solid fa-mug-hot"></i> MINUMAN</a></li>
+                    <li><a href="pesanan.html" class="nav-item-link"><i class="fa-solid fa-clipboard-check"></i> PESANAN</a></li>
+                    <li><a href="lokasi.html" class="nav-item-link"><i class="fa-solid fa-location-dot"></i> LOKASI</a></li>
+                    <li><a href="kontak.html" class="nav-item-link"><i class="fa-solid fa-phone"></i> KONTAK</a></li>
+                </ul>
+
+                <div class="nav-action-btns">
+                    <div class="status-live-pill">
+                        <span class="live-dot"></span> Buka: 08.00–14.00 WIB
+                    </div>
+                    <a href="pesanan.html" class="btn-order-pulse">
+                        <i class="fa-solid fa-cart-shopping"></i> ORDER ONLINE
+                    </a>
+                    <a href="lokasi.html" class="btn-outline-glow">
+                        <i class="fa-solid fa-location-dot"></i> LOKASI KEDAI
+                    </a>
+                    <button type="button" class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Buka Menu" style="color: #FFFFFF;">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileDrawer" class="mobile-drawer">
+            <ul class="mobile-nav-list">
+                <li><a href="isi.html" class="mobile-nav-link">Beranda</a></li>
+                <li><a href="makanan.html" class="mobile-nav-link active">Makanan</a></li>
+                <li><a href="minuman.html" class="mobile-nav-link">Minuman</a></li>
+                <li><a href="pesanan.html" class="mobile-nav-link">Pesanan</a></li>
+                <li><a href="lokasi.html" class="mobile-nav-link">Lokasi</a></li>
+                <li><a href="kontak.html" class="mobile-nav-link">Kontak</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="page-wrapper">
+        <div class="container">
+
+            <div class="section-header">
+                <span class="section-kicker">Buku Menu Kedai</span>
+                <h1>Daftar Menu Makanan</h1>
+                <div class="editorial-divider"></div>
+                <p>Seluruh masakan utama kami disajikan hangat dari dapur dengan porsi pas mengenyangkan dan harga serba <strong>Rp10.000,-</strong>.</p>
+            </div>
+
+            <!-- Category Navigation Tabs -->
+            <div class="menu-nav-tabs">
+                <button type="button" class="tab-btn active" onclick="filterMenu('all', this)">Semua Hidangan</button>
+                <button type="button" class="tab-btn" onclick="filterMenu('nasi', this)">Nasi & Soto</button>
+                <button type="button" class="tab-btn" onclick="filterMenu('ricebowl', this)">Rice Bowl Series</button>
+                <button type="button" class="tab-btn" onclick="filterMenu('indomie', this)">Paket Indomie + Teh Es</button>
+            </div>
+
+            <!-- Grid Menu Makanan -->
+            <div class="menu-grid" id="menuGrid">
+
+                <!-- 1. Nasi Sayur Lodeh (Index 0) -->
+                <div class="menu-card" data-category="nasi">
+                    <div class="card-img-wrap">
+                        <img src="foto makanan/nasisayurlodeh.png" class="foto" alt="Nasi Sayur Lodeh">
+                    </div>
+                    <div class="menu-card-body">
+                        <span class="card-tag">Tradisional</span>
+                        <h3>Nasi Sayur Lodeh</h3>
+                        <p class="card-desc">Nasi, telur rebus gurih, satu tahu goreng, satu tempe mendoan, dan sayur lodeh santan gurih kaya rempah.</p>
+                        <div class="menu-card-footer">
+                            <span class="card-price">Rp10.000,-</span>
+                            <a href="pesanan.html?menu=0" class="food-add-btn" title="Pesan Nasi Sayur Lodeh" aria-label="Tambah Nasi Sayur Lodeh"><i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Nasi Ayam Geprek (Index 1) -->
+                <div class="menu-card" data-category="nasi">
+                    <div class="card-img-wrap">
+                        <img src="foto makanan/nasiayamgeprek.png" class="foto" alt="Nasi Ayam Geprek">
+                    </div>
+                    <div class="menu-card-body">
+                        <span class="card-tag">Favorit</span>
+                        <h3>Nasi Ayam Geprek</h3>
+                        <p class="card-desc">Nasi dengan ayam krispi gurih, sambal geprek pedas segar khas kedai, dan lalapan mentimun.</p>
+                        <div class="menu-card-footer">
+                            <span class="card-price">Rp10.000,-</span>
+                            <a href="pesanan.html?menu=1" class="food-add-btn" title="Pesan Nasi Ayam Geprek" aria-label="Tambah Nasi Ayam Geprek"><i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Nasi Goreng Telur (Index 2) -->
+                <div class="menu-card" data-category="nasi">
+                    <div class="card-img-wrap">
+                        <img src="foto makanan/nasigoreng.png" class="foto" alt="Nasi Goreng Telur">
+                    </div>
+                    <div class="menu-card-body">
+                        <span class="card-tag">Klasik</span>
+                        <h3>Nasi Goreng Telur</h3>
+                        <p class="card-desc">Nasi goreng bumbu spesial dengan aroma wajan khas, telur ceplok gurih, dan irisan mentimun.</p>
+                        <div class="menu-card-footer">
+                            <span class="card-price">Rp10.000,-</span>
+                            <a href="pesanan.html?menu=2" class="food-add-btn" title="Pesan Nasi Goreng Telur" aria-label="Tambah Nasi Goreng Telur"><i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Indomie Rebus Telur + Teh Es (Index 3) -->
+                <div class="menu-card" data-category="indomie">
+                    <div class="card-img-wrap">
+                        <img src="foto makanan/indomierebus.png" class="foto" alt="Indomie Rebus">
+                    </div>
+                    <div class="menu-card-body">
+                        <span class="card-tag">Paket Hemat</span>
+                        <h3>Indomie Rebus + Telur + Teh Es</h3>
+                        <p class="card-desc">Indomie kuah hangat dengan telur rebus dan bumbu gurih, sudah lengkap dengan satu gelas teh es manis.</p>
+                        <div class="menu-card-footer">
+                            <span class="card-price">Rp10.000,-</span>
+                            <a href="pesanan.html?menu=3" class="food-add-btn" title="Pesan Indomie Rebus" aria-label="Tambah Indomie Rebus"><i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Indomie Goreng Telur + Teh Es (Index 4) -->
+                <div class="menu-card" data-category="indomie">
+                    <div class="card-img-wrap">
+                        <img src="foto makanan/indomiegoreng.png" class="foto" alt="Indomie Goreng">
+                    </div>
+                    <div class="menu-card-body">
+                        <span class="card-tag">Paket Hemat</span>
+                        <h3>Indomie Goreng + Telur + Teh Es</h3>
+                        <p class="card-desc">Indomie goreng gurih mantap dengan telur ceplok dan mentimun, sudah termasuk satu gelas teh es manis.</p>
+                        <div class="menu-card-footer">
+                            <span class="card-price">Rp10.000,-</span>
+                            <a href="pesanan.html?menu=4" class="food-add-btn" title="Pesan Indomie Goreng" aria-label="Tambah Indomie Goreng"><i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Rice Bowl Ayam Suwir Kemangi (Index 5) -->
+                <div class="menu-card" data-category="ricebowl">
+                    <div class="card-img-wrap">
+                        <img src="foto makanan/Rice bowl ayam suwir kemangi.png" class="foto" alt="Ayam Suwir Kemangi">
+                    </div>
+                    <div class="menu-card-body">
+                        <span class="card-tag">Paling Laris</span>
+                        <h3>Rice Bowl Ayam Suwir Kemangi</h3>
+                        <p class="card-desc">Nasi putih dengan ayam suwir beraroma daun kemangi segar, irisan telur/nugget, mie goreng, dan mentimun.</p>
+                        <div class="menu-card-footer">
+                            <span class="card-price">Rp10.000,-</span>
+                            <a href="pesanan.html?menu=5" class="food-add-btn" title="Pesan Rice Bowl Ayam Suwir Kemangi" aria-label="Tambah Rice Bowl Ayam Suwir Kemangi"><i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7. Rice Bowl Tongkol Suwir (Index 6) -->
+                <div class="menu-card" data-category="ricebowl">
+                    <div class="card-img-wrap">
+                        <img src="foto makanan/ricebowltongkolsuwir.png" class="foto" alt="Tongkol Suwir">
+                    </div>
+                    <div class="menu-card-body">
+                        <span class="card-tag">Gurih Pedas</span>
+                        <h3>Rice Bowl Tongkol Suwir</h3>
+                        <p class="card-desc">Nasi dengan tongkol suwir bumbu merah gurih pedas nikmat, irisan telur dadar/nugget, mie, dan mentimun.</p>
+                        <div class="menu-card-footer">
+                            <span class="card-price">Rp10.000,-</span>
+                            <a href="pesanan.html?menu=6" class="food-add-btn" title="Pesan Rice Bowl Tongkol Suwir" aria-label="Tambah Rice Bowl Tongkol Suwir"><i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. Rice Bowl Ayam Teriyaki (Index 7) -->
+                <div class="menu-card" data-category="ricebowl">
+                    <div class="card-img-wrap">
+                        <img src="foto makanan/ricebowlayamteriyaki.png" class="foto" alt="Ayam Teriyaki">
+                    </div>
+                    <div class="menu-card-body">
+                        <span class="card-tag">Manis Gurih</span>
+                        <h3>Rice Bowl Ayam Teriyaki</h3>
+                        <p class="card-desc">Nasi putih dengan ayam masak saus teriyaki gurih manis meresap, irisan telur dadar/nugget, mie, dan mentimun.</p>
+                        <div class="menu-card-footer">
+                            <span class="card-price">Rp10.000,-</span>
+                            <a href="pesanan.html?menu=7" class="food-add-btn" title="Pesan Rice Bowl Ayam Teriyaki" aria-label="Tambah Rice Bowl Ayam Teriyaki"><i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 9. Soto Ayam + Telur + Teh Es (Index 8) -->
+                <div class="menu-card" data-category="nasi">
+                    <div class="card-img-wrap">
+                        <img src="foto makanan/sotoayam.png" class="foto" alt="Soto Ayam">
+                    </div>
+                    <div class="menu-card-body">
+                        <span class="card-tag">Kuah Segar</span>
+                        <h3>Soto Ayam + Telur + Teh Es</h3>
+                        <p class="card-desc">Soto ayam kuah sedap berempah dengan telur rebus dan taburan daun seledri, sudah termasuk satu gelas teh es manis.</p>
+                        <div class="menu-card-footer">
+                            <span class="card-price">Rp10.000,-</span>
+                            <a href="pesanan.html?menu=8" class="food-add-btn" title="Pesan Soto Ayam" aria-label="Tambah Soto Ayam"><i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 10. Rice Bowl Bakso Sapi Sambalado (Index 9) -->
+                <div class="menu-card" data-category="ricebowl">
+                    <div class="card-img-wrap">
+                        <img src="foto makanan/ricebowlbaksosambalado.png" class="foto" alt="Bakso Sambalado">
+                    </div>
+                    <div class="menu-card-body">
+                        <span class="card-tag">Pedas Mantap</span>
+                        <h3>Rice Bowl Bakso Sapi Sambalado</h3>
+                        <p class="card-desc">Nasi dengan bakso sapi kenyal dibalut sambalado pedas gurih mantap, irisan telur, mie goreng, dan mentimun.</p>
+                        <div class="menu-card-footer">
+                            <span class="card-price">Rp10.000,-</span>
+                            <a href="pesanan.html?menu=9" class="food-add-btn" title="Pesan Rice Bowl Bakso Sapi Sambalado" aria-label="Tambah Rice Bowl Bakso Sapi Sambalado"><i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Tautan ke Halaman Minuman -->
+            <section style="border-top: 1px solid var(--border); padding-top: 2.5rem; text-align: center;">
+                <p style="font-size: 1rem; color: var(--text-secondary); margin-bottom: 1rem;">
+                    Ingin minuman dingin penyegar dahaga untuk melengkapi santap makan Anda?
+                </p>
+                <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                    <a href="minuman.html" class="tombol">
+                        LIHAT MENU MINUMAN <i class="fa-solid fa-arrow-right" style="font-size: 0.8rem; margin-left: 0.35rem;"></i>
+                    </a>
+                    <a href="pesanan.html" class="tombol-ulang">
+                        LANGSUNG KE FORM PESANAN
+                    </a>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer Standalone & In-Frame -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand-title">KEDAI UENAAK</div>
+                    <div class="footer-brand-tagline">Puas • Murah • Kenyang</div>
+                    <p class="footer-desc">
+                        Kedai kuliner favorit di Pontianak yang menyajikan sajian masakan rumahan lezat, berkualitas, dan harga bersahabat.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Navigasi Cepat</h4>
+                    <ul class="footer-links">
+                        <li><a href="isi.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Beranda</a></li>
+                        <li><a href="makanan.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Menu Makanan</a></li>
+                        <li><a href="minuman.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Menu Minuman</a></li>
+                        <li><a href="pesanan.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Form Pesanan</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Jam Operasional</h4>
+                    <div class="footer-contact-item">
+                        <i class="fa-regular fa-clock"></i>
+                        <div>
+                            <strong>Buka Setiap Hari</strong><br>
+                            Pukul 08.00 - 14.00 WIB
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Hubungi Kami</h4>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            Jl. Daya Nasional, Kota Pontianak<br>(Area Masjid Al-Muhtadin)
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <div>
+                            <strong>WhatsApp:</strong><br>
+                            0813-4769-6121
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>&copy; 2025–2026 Kedai Uenaak Pontianak. Hak Cipta Dilindungi.</div>
+                <div>Najwa Aulia Nusa Putri-D1041241008</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function filterMenu(category, btn) {
+            var buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(function(b) { b.classList.remove('active'); });
+            btn.classList.add('active');
+
+            var cards = document.querySelectorAll('.menu-card');
+            cards.forEach(function(card) {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
