@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,10 +41,14 @@
 
                 <ul class="nav-menu-list">
                     <li><a href="isi.html" class="nav-item-link"><i class="fa-solid fa-house"></i> BERANDA</a></li>
-                    <li><a href="makanan.html" class="nav-item-link"><i class="fa-solid fa-bowl-food"></i> MAKANAN</a></li>
-                    <li><a href="minuman.html" class="nav-item-link"><i class="fa-solid fa-mug-hot"></i> MINUMAN</a></li>
-                    <li><a href="pesanan.html" class="nav-item-link active"><i class="fa-solid fa-clipboard-check"></i> PESANAN</a></li>
-                    <li><a href="lokasi.html" class="nav-item-link"><i class="fa-solid fa-location-dot"></i> LOKASI</a></li>
+                    <li><a href="makanan.html" class="nav-item-link"><i class="fa-solid fa-bowl-food"></i> MAKANAN</a>
+                    </li>
+                    <li><a href="minuman.html" class="nav-item-link"><i class="fa-solid fa-mug-hot"></i> MINUMAN</a>
+                    </li>
+                    <li><a href="pesanan.html" class="nav-item-link active"><i class="fa-solid fa-clipboard-check"></i>
+                            PESANAN</a></li>
+                    <li><a href="lokasi.html" class="nav-item-link"><i class="fa-solid fa-location-dot"></i> LOKASI</a>
+                    </li>
                     <li><a href="kontak.html" class="nav-item-link"><i class="fa-solid fa-phone"></i> KONTAK</a></li>
                 </ul>
 
@@ -57,7 +62,8 @@
                     <a href="lokasi.html" class="btn-outline-glow">
                         <i class="fa-solid fa-location-dot"></i> LOKASI KEDAI
                     </a>
-                    <button type="button" class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Buka Menu" style="color: #FFFFFF;">
+                    <button type="button" class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Buka Menu"
+                        style="color: #FFFFFF;">
                         <i class="fa-solid fa-bars"></i>
                     </button>
                 </div>
@@ -107,7 +113,8 @@
             <form id="formPesanan" class="kotak-pesanan" onsubmit="buatPesanan(); return false;">
 
                 <h2>DATA PEMESAN</h2>
-                <p class="petunjuk">Mohon lengkapi nama dan nomor kontak aktif Anda agar pesanan dapat disiapkan dengan tepat.</p>
+                <p class="petunjuk">Mohon lengkapi nama dan nomor kontak aktif Anda agar pesanan dapat disiapkan dengan
+                    tepat.</p>
 
                 <div class="form-grid-pair">
                     <div>
@@ -122,7 +129,8 @@
                 </div>
 
                 <h2>PILIH MAKANAN</h2>
-                <p class="petunjuk">Tentukan jumlah porsi untuk makanan yang diinginkan. Biarkan 0 untuk menu yang tidak dipilih.</p>
+                <p class="petunjuk">Tentukan jumlah porsi untuk makanan yang diinginkan. Biarkan 0 untuk menu yang tidak
+                    dipilih.</p>
 
                 <div class="table-responsive">
                     <table class="tabel-pesanan">
@@ -139,15 +147,19 @@
                                 <td>
                                     <div class="menu-title-cell">
                                         Nasi Sayur Lodeh
-                                        <small>Nasi, telur rebus, sayur lodeh gurih, satu tahu goreng dan satu tempe mendoan.</small>
+                                        <small>Nasi, telur rebus, sayur lodeh gurih, satu tahu goreng dan satu tempe
+                                            mendoan.</small>
                                     </div>
                                 </td>
                                 <td class="price-cell">Rp10.000</td>
                                 <td style="text-align: center;">
                                     <div class="stepper-wrap">
-                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah0', -1)" aria-label="Kurang">-</button>
-                                        <input type="number" id="jumlah0" aria-label="Jumlah Nasi Sayur Lodeh" min="0" step="1" value="0" required>
-                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah0', 1)" aria-label="Tambah">+</button>
+                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah0', -1)"
+                                            aria-label="Kurang">-</button>
+                                        <input type="number" id="jumlah0" aria-label="Jumlah Nasi Sayur Lodeh" min="0"
+                                            step="1" value="0" required>
+                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah0', 1)"
+                                            aria-label="Tambah">+</button>
                                     </div>
                                 </td>
                             </tr>
@@ -157,15 +169,19 @@
                                 <td>
                                     <div class="menu-title-cell">
                                         Nasi Ayam Geprek
-                                        <small>Nasi putih hangat dengan ayam geprek krispi gurih, sambal pedas, dan mentimun.</small>
+                                        <small>Nasi putih hangat dengan ayam geprek krispi gurih, sambal pedas, dan
+                                            mentimun.</small>
                                     </div>
                                 </td>
                                 <td class="price-cell">Rp10.000</td>
                                 <td style="text-align: center;">
                                     <div class="stepper-wrap">
-                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah1', -1)" aria-label="Kurang">-</button>
-                                        <input type="number" id="jumlah1" aria-label="Jumlah Nasi Ayam Geprek" min="0" step="1" value="0" required>
-                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah1', 1)" aria-label="Tambah">+</button>
+                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah1', -1)"
+                                            aria-label="Kurang">-</button>
+                                        <input type="number" id="jumlah1" aria-label="Jumlah Nasi Ayam Geprek" min="0"
+                                            step="1" value="0" required>
+                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah1', 1)"
+                                            aria-label="Tambah">+</button>
                                     </div>
                                 </td>
                             </tr>
@@ -175,15 +191,19 @@
                                 <td>
                                     <div class="menu-title-cell">
                                         Nasi Goreng Telur
-                                        <small>Nasi goreng aroma wajan khas dengan telur ceplok gurih dan mentimun.</small>
+                                        <small>Nasi goreng aroma wajan khas dengan telur ceplok gurih dan
+                                            mentimun.</small>
                                     </div>
                                 </td>
                                 <td class="price-cell">Rp10.000</td>
                                 <td style="text-align: center;">
                                     <div class="stepper-wrap">
-                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah2', -1)" aria-label="Kurang">-</button>
-                                        <input type="number" id="jumlah2" aria-label="Jumlah Nasi Goreng Telur" min="0" step="1" value="0" required>
-                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah2', 1)" aria-label="Tambah">+</button>
+                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah2', -1)"
+                                            aria-label="Kurang">-</button>
+                                        <input type="number" id="jumlah2" aria-label="Jumlah Nasi Goreng Telur" min="0"
+                                            step="1" value="0" required>
+                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah2', 1)"
+                                            aria-label="Tambah">+</button>
                                     </div>
                                 </td>
                             </tr>
@@ -193,15 +213,19 @@
                                 <td>
                                     <div class="menu-title-cell">
                                         Indomie Rebus Telur + Teh Es
-                                        <small>Indomie kuah hangat dengan telur rebus gurih, sudah termasuk satu gelas teh es manis.</small>
+                                        <small>Indomie kuah hangat dengan telur rebus gurih, sudah termasuk satu gelas
+                                            teh es manis.</small>
                                     </div>
                                 </td>
                                 <td class="price-cell">Rp10.000</td>
                                 <td style="text-align: center;">
                                     <div class="stepper-wrap">
-                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah3', -1)" aria-label="Kurang">-</button>
-                                        <input type="number" id="jumlah3" aria-label="Jumlah Indomie Rebus" min="0" step="1" value="0" required>
-                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah3', 1)" aria-label="Tambah">+</button>
+                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah3', -1)"
+                                            aria-label="Kurang">-</button>
+                                        <input type="number" id="jumlah3" aria-label="Jumlah Indomie Rebus" min="0"
+                                            step="1" value="0" required>
+                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah3', 1)"
+                                            aria-label="Tambah">+</button>
                                     </div>
                                 </td>
                             </tr>
@@ -211,15 +235,19 @@
                                 <td>
                                     <div class="menu-title-cell">
                                         Indomie Goreng Telur + Teh Es
-                                        <small>Indomie goreng lezat dengan telur ceplok dan mentimun, sudah termasuk teh es manis.</small>
+                                        <small>Indomie goreng lezat dengan telur ceplok dan mentimun, sudah termasuk teh
+                                            es manis.</small>
                                     </div>
                                 </td>
                                 <td class="price-cell">Rp10.000</td>
                                 <td style="text-align: center;">
                                     <div class="stepper-wrap">
-                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah4', -1)" aria-label="Kurang">-</button>
-                                        <input type="number" id="jumlah4" aria-label="Jumlah Indomie Goreng" min="0" step="1" value="0" required>
-                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah4', 1)" aria-label="Tambah">+</button>
+                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah4', -1)"
+                                            aria-label="Kurang">-</button>
+                                        <input type="number" id="jumlah4" aria-label="Jumlah Indomie Goreng" min="0"
+                                            step="1" value="0" required>
+                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah4', 1)"
+                                            aria-label="Tambah">+</button>
                                     </div>
                                 </td>
                             </tr>
@@ -229,15 +257,19 @@
                                 <td>
                                     <div class="menu-title-cell">
                                         Rice Bowl Ayam Suwir Kemangi
-                                        <small>Nasi dengan ayam suwir bumbu kemangi aromatik, irisan telur/nugget, mie, dan timun.</small>
+                                        <small>Nasi dengan ayam suwir bumbu kemangi aromatik, irisan telur/nugget, mie,
+                                            dan timun.</small>
                                     </div>
                                 </td>
                                 <td class="price-cell">Rp10.000</td>
                                 <td style="text-align: center;">
                                     <div class="stepper-wrap">
-                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah5', -1)" aria-label="Kurang">-</button>
-                                        <input type="number" id="jumlah5" aria-label="Jumlah Ayam Suwir Kemangi" min="0" step="1" value="0" required>
-                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah5', 1)" aria-label="Tambah">+</button>
+                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah5', -1)"
+                                            aria-label="Kurang">-</button>
+                                        <input type="number" id="jumlah5" aria-label="Jumlah Ayam Suwir Kemangi" min="0"
+                                            step="1" value="0" required>
+                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah5', 1)"
+                                            aria-label="Tambah">+</button>
                                     </div>
                                 </td>
                             </tr>
@@ -247,15 +279,19 @@
                                 <td>
                                     <div class="menu-title-cell">
                                         Rice Bowl Tongkol Suwir
-                                        <small>Nasi dengan tongkol suwir bumbu gurih pedas, telur dadar/nugget, mie, dan mentimun.</small>
+                                        <small>Nasi dengan tongkol suwir bumbu gurih pedas, telur dadar/nugget, mie, dan
+                                            mentimun.</small>
                                     </div>
                                 </td>
                                 <td class="price-cell">Rp10.000</td>
                                 <td style="text-align: center;">
                                     <div class="stepper-wrap">
-                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah6', -1)" aria-label="Kurang">-</button>
-                                        <input type="number" id="jumlah6" aria-label="Jumlah Tongkol Suwir" min="0" step="1" value="0" required>
-                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah6', 1)" aria-label="Tambah">+</button>
+                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah6', -1)"
+                                            aria-label="Kurang">-</button>
+                                        <input type="number" id="jumlah6" aria-label="Jumlah Tongkol Suwir" min="0"
+                                            step="1" value="0" required>
+                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah6', 1)"
+                                            aria-label="Tambah">+</button>
                                     </div>
                                 </td>
                             </tr>
@@ -265,15 +301,19 @@
                                 <td>
                                     <div class="menu-title-cell">
                                         Rice Bowl Ayam Teriyaki
-                                        <small>Nasi dengan ayam saus teriyaki manis gurih meresap, telur dadar/nugget, mie, dan mentimun.</small>
+                                        <small>Nasi dengan ayam saus teriyaki manis gurih meresap, telur dadar/nugget,
+                                            mie, dan mentimun.</small>
                                     </div>
                                 </td>
                                 <td class="price-cell">Rp10.000</td>
                                 <td style="text-align: center;">
                                     <div class="stepper-wrap">
-                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah7', -1)" aria-label="Kurang">-</button>
-                                        <input type="number" id="jumlah7" aria-label="Jumlah Ayam Teriyaki" min="0" step="1" value="0" required>
-                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah7', 1)" aria-label="Tambah">+</button>
+                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah7', -1)"
+                                            aria-label="Kurang">-</button>
+                                        <input type="number" id="jumlah7" aria-label="Jumlah Ayam Teriyaki" min="0"
+                                            step="1" value="0" required>
+                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah7', 1)"
+                                            aria-label="Tambah">+</button>
                                     </div>
                                 </td>
                             </tr>
@@ -283,15 +323,19 @@
                                 <td>
                                     <div class="menu-title-cell">
                                         Soto Ayam + Telur + Teh Es
-                                        <small>Soto ayam kuah sedap dengan telur rebus dan daun seledri, sudah termasuk satu gelas teh es manis.</small>
+                                        <small>Soto ayam kuah sedap dengan telur rebus dan daun seledri, sudah termasuk
+                                            satu gelas teh es manis.</small>
                                     </div>
                                 </td>
                                 <td class="price-cell">Rp10.000</td>
                                 <td style="text-align: center;">
                                     <div class="stepper-wrap">
-                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah8', -1)" aria-label="Kurang">-</button>
-                                        <input type="number" id="jumlah8" aria-label="Jumlah Soto Ayam" min="0" step="1" value="0" required>
-                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah8', 1)" aria-label="Tambah">+</button>
+                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah8', -1)"
+                                            aria-label="Kurang">-</button>
+                                        <input type="number" id="jumlah8" aria-label="Jumlah Soto Ayam" min="0" step="1"
+                                            value="0" required>
+                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah8', 1)"
+                                            aria-label="Tambah">+</button>
                                     </div>
                                 </td>
                             </tr>
@@ -301,15 +345,19 @@
                                 <td>
                                     <div class="menu-title-cell">
                                         Rice Bowl Bakso Sapi Sambalado
-                                        <small>Nasi dengan bakso sapi kenyal dibalut sambalado pedas gurih, telur dadar, mie, dan mentimun.</small>
+                                        <small>Nasi dengan bakso sapi kenyal dibalut sambalado pedas gurih, telur dadar,
+                                            mie, dan mentimun.</small>
                                     </div>
                                 </td>
                                 <td class="price-cell">Rp10.000</td>
                                 <td style="text-align: center;">
                                     <div class="stepper-wrap">
-                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah9', -1)" aria-label="Kurang">-</button>
-                                        <input type="number" id="jumlah9" aria-label="Jumlah Bakso Sapi Sambalado" min="0" step="1" value="0" required>
-                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah9', 1)" aria-label="Tambah">+</button>
+                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah9', -1)"
+                                            aria-label="Kurang">-</button>
+                                        <input type="number" id="jumlah9" aria-label="Jumlah Bakso Sapi Sambalado"
+                                            min="0" step="1" value="0" required>
+                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah9', 1)"
+                                            aria-label="Tambah">+</button>
                                     </div>
                                 </td>
                             </tr>
@@ -332,104 +380,144 @@
                         <tbody>
                             <!-- Index 10 -->
                             <tr>
-                                <td><div class="menu-title-cell">Kopi Hitam</div></td>
+                                <td>
+                                    <div class="menu-title-cell">Kopi Hitam</div>
+                                </td>
                                 <td class="price-cell">Rp6.000</td>
                                 <td style="text-align: center;">
                                     <div class="stepper-wrap">
-                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah10', -1)" aria-label="Kurang">-</button>
-                                        <input type="number" id="jumlah10" aria-label="Jumlah Kopi" min="0" step="1" value="0" required>
-                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah10', 1)" aria-label="Tambah">+</button>
+                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah10', -1)"
+                                            aria-label="Kurang">-</button>
+                                        <input type="number" id="jumlah10" aria-label="Jumlah Kopi" min="0" step="1"
+                                            value="0" required>
+                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah10', 1)"
+                                            aria-label="Tambah">+</button>
                                     </div>
                                 </td>
                             </tr>
 
                             <!-- Index 11 -->
                             <tr>
-                                <td><div class="menu-title-cell">Kopi Susu</div></td>
+                                <td>
+                                    <div class="menu-title-cell">Kopi Susu</div>
+                                </td>
                                 <td class="price-cell">Rp8.000</td>
                                 <td style="text-align: center;">
                                     <div class="stepper-wrap">
-                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah11', -1)" aria-label="Kurang">-</button>
-                                        <input type="number" id="jumlah11" aria-label="Jumlah Kopi Susu" min="0" step="1" value="0" required>
-                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah11', 1)" aria-label="Tambah">+</button>
+                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah11', -1)"
+                                            aria-label="Kurang">-</button>
+                                        <input type="number" id="jumlah11" aria-label="Jumlah Kopi Susu" min="0"
+                                            step="1" value="0" required>
+                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah11', 1)"
+                                            aria-label="Tambah">+</button>
                                     </div>
                                 </td>
                             </tr>
 
                             <!-- Index 12 -->
                             <tr>
-                                <td><div class="menu-title-cell">Milo</div></td>
+                                <td>
+                                    <div class="menu-title-cell">Milo</div>
+                                </td>
                                 <td class="price-cell">Rp6.000</td>
                                 <td style="text-align: center;">
                                     <div class="stepper-wrap">
-                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah12', -1)" aria-label="Kurang">-</button>
-                                        <input type="number" id="jumlah12" aria-label="Jumlah Milo" min="0" step="1" value="0" required>
-                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah12', 1)" aria-label="Tambah">+</button>
+                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah12', -1)"
+                                            aria-label="Kurang">-</button>
+                                        <input type="number" id="jumlah12" aria-label="Jumlah Milo" min="0" step="1"
+                                            value="0" required>
+                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah12', 1)"
+                                            aria-label="Tambah">+</button>
                                     </div>
                                 </td>
                             </tr>
 
                             <!-- Index 13 -->
                             <tr>
-                                <td><div class="menu-title-cell">Es Teh Jumbo</div></td>
+                                <td>
+                                    <div class="menu-title-cell">Es Teh Jumbo</div>
+                                </td>
                                 <td class="price-cell">Rp3.000</td>
                                 <td style="text-align: center;">
                                     <div class="stepper-wrap">
-                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah13', -1)" aria-label="Kurang">-</button>
-                                        <input type="number" id="jumlah13" aria-label="Jumlah Es Teh Jumbo" min="0" step="1" value="0" required>
-                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah13', 1)" aria-label="Tambah">+</button>
+                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah13', -1)"
+                                            aria-label="Kurang">-</button>
+                                        <input type="number" id="jumlah13" aria-label="Jumlah Es Teh Jumbo" min="0"
+                                            step="1" value="0" required>
+                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah13', 1)"
+                                            aria-label="Tambah">+</button>
                                     </div>
                                 </td>
                             </tr>
 
                             <!-- Index 14 -->
                             <tr>
-                                <td><div class="menu-title-cell">Es Jeruk Kecil</div></td>
+                                <td>
+                                    <div class="menu-title-cell">Es Jeruk Kecil</div>
+                                </td>
                                 <td class="price-cell">Rp4.000</td>
                                 <td style="text-align: center;">
                                     <div class="stepper-wrap">
-                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah14', -1)" aria-label="Kurang">-</button>
-                                        <input type="number" id="jumlah14" aria-label="Jumlah Es Jeruk Kecil" min="0" step="1" value="0" required>
-                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah14', 1)" aria-label="Tambah">+</button>
+                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah14', -1)"
+                                            aria-label="Kurang">-</button>
+                                        <input type="number" id="jumlah14" aria-label="Jumlah Es Jeruk Kecil" min="0"
+                                            step="1" value="0" required>
+                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah14', 1)"
+                                            aria-label="Tambah">+</button>
                                     </div>
                                 </td>
                             </tr>
 
                             <!-- Index 15 -->
                             <tr>
-                                <td><div class="menu-title-cell">Es Jeruk Besar</div></td>
+                                <td>
+                                    <div class="menu-title-cell">Es Jeruk Besar</div>
+                                </td>
                                 <td class="price-cell">Rp5.000</td>
                                 <td style="text-align: center;">
                                     <div class="stepper-wrap">
-                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah15', -1)" aria-label="Kurang">-</button>
-                                        <input type="number" id="jumlah15" aria-label="Jumlah Es Jeruk Besar" min="0" step="1" value="0" required>
-                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah15', 1)" aria-label="Tambah">+</button>
+                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah15', -1)"
+                                            aria-label="Kurang">-</button>
+                                        <input type="number" id="jumlah15" aria-label="Jumlah Es Jeruk Besar" min="0"
+                                            step="1" value="0" required>
+                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah15', 1)"
+                                            aria-label="Tambah">+</button>
                                     </div>
                                 </td>
                             </tr>
 
                             <!-- Index 16 -->
                             <tr>
-                                <td><div class="menu-title-cell">Mineral Botol 600ml</div></td>
+                                <td>
+                                    <div class="menu-title-cell">Mineral Botol 600ml</div>
+                                </td>
                                 <td class="price-cell">Rp4.000</td>
                                 <td style="text-align: center;">
                                     <div class="stepper-wrap">
-                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah16', -1)" aria-label="Kurang">-</button>
-                                        <input type="number" id="jumlah16" aria-label="Jumlah Mineral Botol" min="0" step="1" value="0" required>
-                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah16', 1)" aria-label="Tambah">+</button>
+                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah16', -1)"
+                                            aria-label="Kurang">-</button>
+                                        <input type="number" id="jumlah16" aria-label="Jumlah Mineral Botol" min="0"
+                                            step="1" value="0" required>
+                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah16', 1)"
+                                            aria-label="Tambah">+</button>
                                     </div>
                                 </td>
                             </tr>
 
                             <!-- Index 17 -->
                             <tr>
-                                <td><div class="menu-title-cell">Air Putih Es</div></td>
+                                <td>
+                                    <div class="menu-title-cell">Air Putih Es</div>
+                                </td>
                                 <td class="price-cell">Rp2.000</td>
                                 <td style="text-align: center;">
                                     <div class="stepper-wrap">
-                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah17', -1)" aria-label="Kurang">-</button>
-                                        <input type="number" id="jumlah17" aria-label="Jumlah Air Putih Es" min="0" step="1" value="0" required>
-                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah17', 1)" aria-label="Tambah">+</button>
+                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah17', -1)"
+                                            aria-label="Kurang">-</button>
+                                        <input type="number" id="jumlah17" aria-label="Jumlah Air Putih Es" min="0"
+                                            step="1" value="0" required>
+                                        <button type="button" class="stepper-btn" onclick="stepJumlah('jumlah17', 1)"
+                                            aria-label="Tambah">+</button>
                                     </div>
                                 </td>
                             </tr>
@@ -440,8 +528,10 @@
                 <!-- Live Floating Total Bar -->
                 <div class="live-total-bar">
                     <div class="live-total-label">
-                        <strong>Perkiraan Total:</strong>
-                        <span id="liveTotalCount" style="font-size: 0.85rem; color: var(--text-tertiary); margin-left: 0.5rem;">0 item dipilih</span>
+                        <strong>Total:</strong>
+                        <span id="liveTotalCount"
+                            style="font-size: 0.85rem; color: var(--text-tertiary); margin-left: 0.5rem;">0 item
+                            dipilih</span>
                     </div>
                     <div class="live-total-value" id="liveTotalVal">Rp 0,-</div>
                 </div>
@@ -457,14 +547,17 @@
 
                 <div id="bagianAlamat" hidden>
                     <label for="alamat">Alamat Pengantaran</label>
-                    <textarea id="alamat" rows="3" placeholder="Nama jalan, nomor rumah/fakultas, gedung, dan patokan"></textarea>
+                    <textarea id="alamat" rows="3"
+                        placeholder="Nama jalan, nomor rumah/fakultas, gedung, dan patokan"></textarea>
                     <p class="petunjuk" style="color: var(--accent); margin-top: 0.35rem;">
-                        Ongkos antar belum termasuk dalam total. Pihak kedai akan mengonfirmasi ongkos antar melalui WhatsApp.
+                        Ongkos antar belum termasuk dalam total. Pihak kedai akan mengonfirmasi ongkos antar melalui
+                        WhatsApp.
                     </p>
                 </div>
 
                 <label for="catatan">Catatan Tambahan (Opsional)</label>
-                <textarea id="catatan" rows="3" placeholder="Contoh: Tidak pakai sambal, es sedikit, ayam dipisah, dll."></textarea>
+                <textarea id="catatan" rows="3"
+                    placeholder="Contoh: Tidak pakai sambal, es sedikit, ayam dipisah, dll."></textarea>
 
                 <div class="baris-tombol">
                     <button type="submit" class="tombol-pesanan">
@@ -489,11 +582,14 @@
 
                 <h2>PEMBAYARAN QRIS DIGITAL</h2>
                 <p>
-                    Scan kode QRIS resmi di bawah ini menggunakan aplikasi Mobile Banking atau e-Wallet (BCA, Mandiri, GoPay, OVO, ShopeePay, Dana, dll.) sesuai total pesanan Anda.
+                    Scan kode QRIS resmi di bawah ini menggunakan aplikasi Mobile Banking atau e-Wallet (BCA, Mandiri,
+                    GoPay, OVO, ShopeePay, Dana, dll.) sesuai total pesanan Anda.
                 </p>
 
                 <div class="qr-container">
-                    <strong style="font-size: 0.85rem; color: var(--primary); display: block; margin-bottom: 0.5rem;">QRIS RESMI KEDAI UENAAK</strong>
+                    <strong
+                        style="font-size: 0.85rem; color: var(--primary); display: block; margin-bottom: 0.5rem;">QRIS
+                        RESMI KEDAI UENAAK</strong>
                     <img src="foto makanan/qrpembayaran.jpeg" alt="QR pembayaran Kedai Uenaak" class="foto-qr">
                     <p class="petunjuk" style="margin: 0; font-size: 0.8rem;">
                         Periksa nama penerima: <strong>KEDAI UENAAK</strong> sebelum menyelesaikan transfer.
@@ -513,7 +609,8 @@
 
             <!-- Bagian Riwayat Pesanan (Nota Digital) -->
             <div class="kotak-pesanan">
-                <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.5rem; margin-bottom: 1rem;">
+                <div
+                    style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.5rem; margin-bottom: 1rem;">
                     <h2 style="border-bottom: none; margin: 0; padding: 0;">DAFTAR PESANAN</h2>
                     <button type="button" class="tombol-reset" onclick="hapusSemuaRiwayat()">
                         Bersihkan Riwayat
@@ -538,17 +635,22 @@
                     <div class="footer-brand-title">KEDAI UENAAK</div>
                     <div class="footer-brand-tagline">Puas • Murah • Kenyang</div>
                     <p class="footer-desc">
-                        Kedai kuliner favorit di Pontianak yang menyajikan sajian masakan rumahan lezat, berkualitas, dan harga bersahabat.
+                        Kedai kuliner favorit di Pontianak yang menyajikan sajian masakan rumahan lezat, berkualitas,
+                        dan harga bersahabat.
                     </p>
                 </div>
 
                 <div class="footer-col">
                     <h4>Navigasi Cepat</h4>
                     <ul class="footer-links">
-                        <li><a href="isi.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Beranda</a></li>
-                        <li><a href="makanan.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Menu Makanan</a></li>
-                        <li><a href="minuman.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Menu Minuman</a></li>
-                        <li><a href="pesanan.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Form Pesanan</a></li>
+                        <li><a href="isi.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Beranda</a>
+                        </li>
+                        <li><a href="makanan.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Menu
+                                Makanan</a></li>
+                        <li><a href="minuman.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Menu
+                                Minuman</a></li>
+                        <li><a href="pesanan.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Form
+                                Pesanan</a></li>
                     </ul>
                 </div>
 
@@ -590,4 +692,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
